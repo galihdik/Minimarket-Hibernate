@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+      "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.lawencon.minimarket.model.Supliers" table="tb_m_supliers">
+
+		<id name="idSupliers">
+			<column name="id_supliers" />	
+			<generator class="identity" />
+		</id>
+		
+		<property name="nameSupliers">
+			<column name="name_supliers" length="100"/>
+		</property>
+		
+		<property name="phoneNumber">
+			<column name="phone_number" length="100" />
+		</property>
+		<property name="locationSupliers">
+			<column name="location_supliers" length="100" />
+		</property>
+		
+		<property name="suplierCode">
+			<column name="suplier_code" length="100" unique="true"/>
+		</property>
+		
+	</class>
+
+</hibernate-mapping>

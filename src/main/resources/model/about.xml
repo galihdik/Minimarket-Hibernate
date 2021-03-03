@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+      "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	
+	<class name="com.lawencon.minimarket.model.About" table="tb_m_about">
+		
+		<id name="idAbout">
+			<column name="id_about" />	
+			<generator class="identity" />
+		</id>
+		
+		<property name="nameAbout">
+			<column name="name_about" length="100"/>
+		</property>
+		
+		<property name="locationAbout">
+			<column name="location_about" length="100"/>
+		</property>
+		
+		<property name="aboutCode">
+			<column name="about_code" length="100" unique="true"/>
+		</property>
+		
+	</class>
+	
+</hibernate-mapping>

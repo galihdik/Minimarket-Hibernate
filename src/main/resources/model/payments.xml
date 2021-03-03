@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+      "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.lawencon.minimarket.model.Payments" table="tb_m_payments">
+
+		<id name="idPayments">
+			<column name="id_payments" />	
+			<generator class="identity" />
+		</id>
+		
+		<property name="namePayments">
+			<column name="name_payments" length="100"/>
+		</property>
+		
+		<property name="paymentsType">
+			<column name="payments_type" length="100" />
+		</property>
+		
+		<property name="paymentCode">
+			<column name="payment_code" length="100" unique="true"/>
+		</property>
+		
+	</class>
+
+</hibernate-mapping>

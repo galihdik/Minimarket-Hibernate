@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+      "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.lawencon.minimarket.model.Items" table="tb_m_items">
+
+		<id name="idItems">
+			<column name="id_item" />	
+			<generator class="identity" />
+		</id>
+		
+		<property name="nameItems">
+			<column name="name_item" length="100"/>
+		</property>
+		
+		<property name="priceItems">
+			<column name="price_item" length="100" />
+		</property>
+		
+		<property name="expiredItems">
+			<column name="expired_items" length="100" />
+		</property>
+		
+		<property name="codeItems">
+			<column name="code_items" length="100" unique="true"/>
+		</property>
+		
+		<property name="stockItems">
+			<column name="stock_items" length="100" />
+		</property>
+		
+		
+		<many-to-one name="idCategory" class="com.lawencon.minimarket.model.Category" lazy="false">
+			<column name="id_category" />
+		</many-to-one>
+		
+		<many-to-one name="idSupliers" class="com.lawencon.minimarket.model.Supliers" lazy="false">
+			<column name="id_supliers" />
+		</many-to-one>
+		
+	</class>
+
+</hibernate-mapping>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+	<bean id="aboutDao" class="com.lawencon.minimarket.dao.AboutDaoImpl">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+	<bean id="categoryDao" class="com.lawencon.minimarket.dao.CategoryDaoImpl">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+	<bean id="detailTransactionDao" class="com.lawencon.minimarket.dao.DetailTransactionDaoImpl">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+	<bean id="itemDao" class="com.lawencon.minimarket.dao.ItemDaoImpl">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+	<bean id="paymentsDao" class="com.lawencon.minimarket.dao.PaymentsDaoImpl">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+	<bean id="profilesDao" class="com.lawencon.minimarket.dao.ProfilesDaoImpl">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+	<bean id="rolesDao" class="com.lawencon.minimarket.dao.RolesDaoImpl">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+	<bean id="supliersDao" class="com.lawencon.minimarket.dao.SupliersDaoImpl">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+	<bean id="transactionsDao" class="com.lawencon.minimarket.dao.TransactionsDaoImpl">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+	<bean id="usersDao" class="com.lawencon.minimarket.dao.UsersDaoImpl">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+</beans>

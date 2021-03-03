@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+	<bean id="aboutDaoJdbc" class="com.lawencon.minimarket.dao.AboutDaoJdbcImpl" autowire="byName">
+		
+	</bean>
+	<bean id="categoryDaoJdbc" class="com.lawencon.minimarket.dao.CategoryDaoJdbcImpl" autowire="byName">
+		
+	</bean>
+	<bean id="detailTransactionDaoJdbc" class="com.lawencon.minimarket.dao.DetailTransactionDaoJdbcImpl" autowire="byName">
+		
+	</bean>
+	<bean id="itemDaoJdbc" class="com.lawencon.minimarket.dao.ItemDaoJdbcImpl" autowire="byName">
+		
+	</bean>
+	<bean id="paymentsDaoJdbc" class="com.lawencon.minimarket.dao.PaymentsDaoJdbcImpl" autowire="byName">
+		
+	</bean>
+	<bean id="profilesDaoJdbc" class="com.lawencon.minimarket.dao.ProfilesDaoJdbcImpl" autowire="byName">
+		
+	</bean>
+	<bean id="rolesDaoJdbc" class="com.lawencon.minimarket.dao.RolesDaoJdbcImpl" autowire="byName">
+		
+	</bean>
+	<bean id="supliersDaoJdbc" class="com.lawencon.minimarket.dao.SupliersDaoJdbcImpl" autowire="byName">
+		
+	</bean>
+	<bean id="transactionsDaoJdbc" class="com.lawencon.minimarket.dao.TransactionsDaoJdbcImpl" autowire="byName">
+	
+	</bean>
+	<bean id="usersDaoJdbc" class="com.lawencon.minimarket.dao.UsersDaoJdbcImpl" autowire="byName">
+		
+	</bean>
+</beans>

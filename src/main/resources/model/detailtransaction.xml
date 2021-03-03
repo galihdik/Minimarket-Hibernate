@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+      "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	
+	<class name="com.lawencon.minimarket.model.DetailTransactions" table="tb_r_dtl_transactions">
+		
+		<id name="idDetailTransaction">
+			<column name="id_detail_transaction" />	
+			<generator class="identity" />
+		</id>
+		
+		<property name="qty">
+			<column name="qty" length="100"/>
+		</property>
+		<many-to-one name="idItems" class="com.lawencon.minimarket.model.Items" lazy="false">
+			<column name="id_item" />
+		</many-to-one>
+		<property name="price">
+			<column name="price" length="100"/>
+		</property>
+		
+		<many-to-one name="idTransaction" class="com.lawencon.minimarket.model.Transactions" lazy="false">
+			<column name="id_transaction" />
+		</many-to-one>
+		
+	</class>
+	
+</hibernate-mapping>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+	<bean id="aboutDaoHibernate" class="com.lawencon.minimarket.dao.AboutDaoHibernateImpl" autowire="byName">
+		
+	</bean>
+	<bean id="categoryDaoHibernate" class="com.lawencon.minimarket.dao.CategoryDaoHibernateImpl" autowire="byName">
+		
+	</bean>
+	<bean id="detailTransactionDaoHibernate" class="com.lawencon.minimarket.dao.DetailTransactionDaoHibernateImpl" autowire="byName">
+		
+	</bean>
+	<bean id="itemDaoHibernate" class="com.lawencon.minimarket.dao.ItemDaoHibernateImpl" autowire="byName">
+		
+	</bean>
+	<bean id="paymentsDaoHibernate" class="com.lawencon.minimarket.dao.PaymentsDaoHibernateImpl" autowire="byName">
+		
+	</bean>
+	<bean id="profilesDaoHibernate" class="com.lawencon.minimarket.dao.ProfilesDaoHibernateImpl" autowire="byName">
+		
+	</bean>
+	<bean id="rolesDaoHibernate" class="com.lawencon.minimarket.dao.RolesDaoHibernateImpl" autowire="byName">
+		
+	</bean>
+	<bean id="supliersDaoHibernate" class="com.lawencon.minimarket.dao.SupliersDaoHibernateImpl" autowire="byName">
+		
+	</bean>
+	<bean id="transactionsDaoHibernate" class="com.lawencon.minimarket.dao.TransactionsDaoHibernateImpl" autowire="byName">
+	
+	</bean>
+	<bean id="usersDaoHibernate" class="com.lawencon.minimarket.dao.UsersDaoHibernateImpl" autowire="byName">
+		
+	</bean>
+</beans>

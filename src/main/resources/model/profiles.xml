@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+      "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.lawencon.minimarket.model.Profiles" table="tb_m_profiles">
+
+		<id name="idProfiles">
+			<column name="id_profiles" />	
+			<generator class="identity" />
+		</id>
+		
+		<property name="addressProfile">
+			<column name="address_profile" length="100"/>
+		</property>
+		
+		<property name="nameProfile">
+			<column name="name_profile" length="100" />
+		</property>
+		
+		<property name="profileCode">
+			<column name="profile_code" length="100" unique="true"/>
+		</property>
+		
+	</class>
+
+</hibernate-mapping>

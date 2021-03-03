@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+      "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	
+	<class name="com.lawencon.minimarket.model.Category" table="tb_m_category">
+		
+		<id name="idCategory">
+			<column name="id_category" />	
+			<generator class="identity" />
+		</id>
+		
+		<property name="categoryName">
+			<column name="category_name" length="100"/>
+		</property>
+		
+		<property name="categoryCode">
+			<column name="category_code" length="100" unique="true"/>
+		</property>
+		
+	</class>
+	
+</hibernate-mapping>

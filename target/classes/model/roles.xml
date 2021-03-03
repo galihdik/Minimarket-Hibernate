@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+      "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.lawencon.minimarket.model.Roles" table="tb_m_roles">
+
+		<id name="idRoles">
+			<column name="id_roles" />	
+			<generator class="identity" />
+		</id>
+		
+		<property name="nameRoles">
+			<column name="name_roles" length="100"/>
+		</property>
+		
+		<property name="codeRoles">
+			<column name="code_roles" length="100" unique="true"/>
+		</property>
+		
+	</class>
+
+</hibernate-mapping>

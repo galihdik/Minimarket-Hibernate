@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+      "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.lawencon.minimarket.model.Users" table="tb_m_users">
+
+		<id name="userId">
+			<column name="user_id" />	
+			<generator class="identity" />
+		</id>
+		
+		<property name="username">
+			<column name="username" length="100"/>
+		</property>
+		
+		<property name="pswd">
+			<column name="pswd" length="100" />
+		</property>
+		
+		<many-to-one name="idRoles" class="com.lawencon.minimarket.model.Roles" lazy="false">
+			<column name="id_roles" />
+		</many-to-one>
+		
+		<many-to-one name="idProfiles" class="com.lawencon.minimarket.model.Profiles" lazy="false">
+			<column name="id_profiles" unique ="true"/>
+		</many-to-one>
+		
+		<property name="userCode">
+			<column name="user_code" length="100" unique="true"/>
+		</property>
+		
+	</class>
+
+</hibernate-mapping>

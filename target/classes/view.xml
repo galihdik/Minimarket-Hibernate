@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+	<bean id="aboutView" class="com.lawencon.minimarket.view.AboutView" autowire="constructor">
+        
+	</bean>
+	<bean id="categoryView" class="com.lawencon.minimarket.view.CategoryView" autowire="constructor">
+        
+	</bean>
+	<bean id="itemView" class="com.lawencon.minimarket.view.ItemView" autowire="constructor">
+        
+	</bean>
+	<bean id="login" class="com.lawencon.minimarket.view.Login" autowire="constructor"> 
+        
+	</bean>
+	<bean id="mainView" class="com.lawencon.minimarket.view.MainView" autowire="constructor">
+        
+	</bean>
+	<bean id="paymentView" class="com.lawencon.minimarket.view.PaymentView" autowire="constructor">
+        
+	</bean>
+	<bean id="profileView" class="com.lawencon.minimarket.view.ProfileView" autowire="constructor">
+     
+	</bean>
+	<bean id="roleView" class="com.lawencon.minimarket.view.RoleView" autowire="constructor">
+       
+	</bean>
+	<bean id="suplierView" class="com.lawencon.minimarket.view.SuplierView" autowire="constructor">
+        
+	</bean>
+	<bean id="userView" class="com.lawencon.minimarket.view.UserView" autowire="constructor">
+       
+	</bean>
+	<bean id="history" class="com.lawencon.minimarket.view.History" autowire="constructor">
+        
+	</bean>
+	<bean id="menuAdmin" class="com.lawencon.minimarket.view.MenuAdmin" autowire="constructor">
+       
+	</bean>
+	<bean id="menuCashier" class="com.lawencon.minimarket.view.MenuCashier" autowire="constructor">
+     
+	</bean>
+</beans>

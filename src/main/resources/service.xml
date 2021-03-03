@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+	<bean id="aboutService" class="com.lawencon.minimarket.service.AboutServiceImpl" autowire="constructor">
+		
+	</bean>
+	<bean id="categoryService" class="com.lawencon.minimarket.service.CategoryServiceImpl" autowire="constructor" >
+		
+	</bean>
+	<bean id="detailTransactionService" class="com.lawencon.minimarket.service.DetailTransactionServiceImpl" autowire="constructor">
+	
+	</bean>
+	<bean id="itemService" class="com.lawencon.minimarket.service.ItemServiceImpl" autowire="constructor">
+	
+	</bean>
+	<bean id="paymentService" class="com.lawencon.minimarket.service.PaymentServiceImpl" autowire="constructor">
+		
+	</bean>
+	<bean id="profileService" class="com.lawencon.minimarket.service.ProfileServiceImpl" autowire="constructor">
+		
+	</bean>
+	<bean id="rolesService" class="com.lawencon.minimarket.service.RolesServiceImpl" autowire="constructor">
+		
+	</bean>
+	<bean id="supliersService" class="com.lawencon.minimarket.service.SupliersServiceImpl" autowire="constructor">
+		
+	</bean>
+	<bean id="transactionsService" class="com.lawencon.minimarket.service.TransactionsServiceImpl" autowire="constructor">
+		
+	</bean>
+	<bean id="userService" class="com.lawencon.minimarket.service.UsersServicesImpl" autowire="constructor">
+		
+	</bean>
+	
+</beans>
